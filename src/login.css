@@ -47,7 +47,7 @@ form {
 
 #send {
   width: 150px;
-  height: 30px;
+  height: 35px;
   font-size: 15px;
   font-weight: 700;
   border-radius: 20px;
@@ -64,4 +64,13 @@ form {
 
 .floating-image {
   width: 60vh;
+}
+
+#error-on p,  #error-off p{
+  font-size: 15px;
+  color: rgb(206, 5, 5);
+}
+
+#error-off{
+  display: none;
 }

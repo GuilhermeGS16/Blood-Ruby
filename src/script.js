@@ -1,7 +1,7 @@
 const users = [
   {
     user: "guilherme",
-    password: "guilherme"
+    password: "guilherme" 
   },
   {
     user: "thiago",
@@ -13,8 +13,17 @@ const users = [
   }
 ]
 
-let botao = document.getElementById('send');
-botao.addEventListener('click', function login() {
+let rubyValue = 0;
+
+function addRuby(){
+  document.getElementById('ruby-number').value++;
+}
+
+function activeError(){
+  document.getElementById("error-off").setAttribute('id','error-on')
+}
+
+function login() {
   let takeUser = document.getElementById('user').value;
   let takePassword = document.getElementById('password').value;
   let validateLogin = false;
@@ -22,22 +31,16 @@ botao.addEventListener('click', function login() {
   for (let i in users) {
     if (users[i].user == takeUser && users[i].password == takePassword) {
       validateLogin = true;
-      console.log("entrou no for e no if")
       break
     }
   }
 
   if (validateLogin == true) {
-    location.href = "index.html";
+    location.href = "index.html"
   }
   else {
-    alert("erro")
+    activeError()
   }
-})
+}
 
 
-//else {
-  //if (users[i].user != takeUser || users[i].password != takePassword) {
- //   alert("Usuário ou senha inválido")
-//  }
-//}

@@ -2,14 +2,37 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x:hidden;
+}
+
+.ruby-points{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header {
     height: 70px;
-    background-color: blue;
+    background-color: rgb(255, 255, 255);
     width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.profile{
+    display: flex;
     justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .menu ul {
@@ -22,4 +45,97 @@
 ul li a {
     text-decoration: none;
     color: black;
+}
+
+.logo{
+    margin: 20px;
+    width: 15%;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+.profile img{
+    width: 40px;
+}
+
+.profile{
+    gap: 10px;
+}
+
+.ruby-image{
+    width: 22px;
+}
+
+.ruby-points{
+    gap: 5px;
+}
+
+.ad-1 img{
+    width: 100vw;
+}
+
+.content-footer img{
+    width: 10%;
+}
+
+.content-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    height: 60px;
+}
+
+section h1{
+    color: rgb(163, 25, 25);
+}
+.main{
+    width: 85%;
+}
+
+.right-side{
+    width: 15%;
+}
+
+.divisor{
+    display: flex;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0 24px;
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+
+.ad-2 img{
+   width: 100%; 
+}
+
+.ad-1, .ad-2{
+    cursor: pointer;
+}
+
+#ruby-number{
+    outline: none;
+    box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+  background-color: red;
+  width: 20px;
+  font-size: 17px;
+  background-color: white;
+}
+
+.main a {
+text-decoration: none;
+color: rgb(118, 127, 255);
 }

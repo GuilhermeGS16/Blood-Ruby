@@ -18,7 +18,8 @@
       <h1>Login</h1>
       <input type="text" placeholder="Usuário" id="user">
       <input type="password" placeholder="Senha" id="password">
-      <input type="submit" id="send">
+      <div id="error-off"><p>Usuário ou senha inválido</p></div>
+      <input type="submit" id="send" onclick="login();return false">
     </form>
   </section>
 </body>

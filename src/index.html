@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!-- favicon -->
+    <link rel="shortcut icon" href="../assets/images/Ruby-favicon.png" type="image/x-icon"> <!-- favicon -->
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <title>Blood Ruby</title>
@@ -13,7 +13,7 @@
 
 <body>
     <header class="header">
-        <img class="logo" src="logo" alt="Logotipo"> <!-- link the logo to the homepage -->
+        <img class="logo" src="../assets/images/Menu-logo.png" alt="Logotipo"> <!-- link the logo to the homepage -->
         <nav class="menu"> <!-- Menu bar -->
             <ul>
                 <li><a href="index.html">Início</a></li>
@@ -24,47 +24,60 @@
                 <li><a href="index.html">Sobre nós</a></li>
             </ul>
             <div class="ruby-points">
-                <img class="ruby-image" src="ruby" alt="Ruby"> <!-- ruby icon -->
-                <p>500</p> <!-- Ruby points amount -->
+                <img class="ruby-image" src="../assets/images/Gif logo.gif" alt="Ruby"> <!-- ruby icon -->
+                <input type="text" id="ruby-number" disabled value="0"> <!-- Ruby points amount -->
             </div>
             <div class="profile"> <!-- profile div -->
-                <img src="profile-photo" alt="profile-photo"> <!-- profile photo -->
+                <img src="../assets/images/Profile-photo-default.png" alt="profile-photo"> <!-- profile photo -->
                 <p>Guilherme</p> <!-- First name only -->
             </div>
         </nav>
     </header>
-    <section>
-        <div class="ad-1">
-            <img src="ad-1" alt="image"> <!-- can be a video too -->
-        </div>
-        <h1>Como funciona?</h1>
-        <p>O Blood Ruby foi criado com a inteção de ajudar principalmente nos bancos de sangue dos
-            hospitais.
-            Os rubis são os pontos do site que podem ser trocados por itens e descontos na aba de
-            "Recompensas". Existem três maneiras de consegui-los, a primeira é fazendo
-            doações de sangue em qualquer centro de doação, a segunda é assistindo anúncios e a terceira é
-            fazendo tarefas diárias.
-        </p>
+    <div class="ad-1">
+        <img src="../assets/images/Ad1 - cocacola.png" alt="image" onclick="addRuby()"> <!-- can be a video too -->
+    </div>
 
-        <h1>Como sei se estou apto para fazer uma doação</h1>
-        <p>
-            <a href="Forms">Clique aqui</a> e responda o formulário de aptidão <!-- remember to add the forms -->
-        </p>
+    <div class="divisor">
+        <section class="main">
+            <div class="container">
+                <h1>Como funciona?</h1>
+                <p>O Blood Ruby foi criado com a inteção de ajudar principalmente nos bancos de sangue dos
+                    hospitais.
+                    Os rubis são os pontos do site que podem ser trocados por itens e descontos na aba de
+                    "Recompensas". Existem três maneiras de consegui-los, a primeira é fazendo
+                    doações de sangue em qualquer centro de doação, a segunda é assistindo anúncios e a terceira é
+                    fazendo tarefas diárias.
+                </p>
+                <br>
 
-        <h1>Como faço para ganhar rubis doando sangue?</h1>
-        <p>
-            Vá até o ponto de retirada mais próximo e faça a doação normalmente, mas lembre-se de pedir o
-            comprovante de que você doou o seu sangue para a organização. Vá na aba de "Doação" e depois clique no botão
-            de "ganhar pontos"
-            dentro dessa parte pedirá alguns dados e o comprovante de doação, tire uma foto e anexe-o, depois da
-            confirmação você
-            receberá seus rubis, lembrando que o processo de confirmação pode levar de 1 a 2 dias
-        </p>
-    </section>
+                <h1>Como sei se estou apto para fazer uma doação</h1>
+                <p>
+                    <a href="Forms">Clique aqui</a> e responda o formulário de aptidão
+                    <!-- remember to add the forms -->
+                </p>
+                <br>
+                <h1>Como faço para ganhar rubis doando sangue?</h1>
+                <p>
+                    Vá até o ponto de retirada mais próximo e faça a doação normalmente, mas lembre-se de pedir o
+                    comprovante de que você doou o seu sangue para a organização. Vá na aba de "Doação" e depois clique
+                    no botão
+                    de "ganhar pontos"
+                    dentro dessa parte pedirá alguns dados e o comprovante de doação, tire uma foto e anexe-o, depois da
+                    confirmação você
+                    receberá seus rubis, lembrando que o processo de confirmação pode levar de 1 a 2 dias
+                </p>
+            </div>
+        </section>
+        <aside class="right-side">
+            <div class="ad-2">
+                <img src="../assets/images/Ad2 - mcdonalds.jpg" alt="image"> <!-- can be a video too -->
+            </div>
+        </aside>
+    </div>
     <footer>
         <div class="content-footer">
-            <p>Todos os direitos reservados a &copy;Blood Ruby 2023-</p>
-            <img src="logo" alt="Logo">
+            <p>&copy;2023 Todos os direitos reservados a Blood Ruby</p>
+            <img src="../assets/images/Menu-logo.png" alt="Logo">
         </div>
     </footer>
 </body>
